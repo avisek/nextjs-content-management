@@ -1,17 +1,13 @@
 import DashboardItem from "@/components/DashboardItem"
 import Icon from "@/components/Icon"
 
-export type DashboardProps = {
-  
-}
-
-export default function Dashboard({  }: DashboardProps) {
+export default function Dashboard() {
   return (
     <div className="">
       <h2 className="text-slate-900 text-4xl leading-normal font-semibold">Hello Admin,</h2>
       <p className="mb-8 text-slate-400 text-lg">This is what we got you for today.</p>
       
-      <div className="flex flex-wrap gap-8">
+      <div className="mb-10 flex flex-wrap gap-8">
         <div className="grow basis-0 flex flex-wrap gap-8">
           <DashboardItem
             icon={<Icon icon="dashboard_articles"/>}

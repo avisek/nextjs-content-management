@@ -22,19 +22,19 @@ export default function RootLayout({
     <html lang="en">
       <body className={urbanistFont.className}>
         <SideBar
-          navItems={[
-            <SideBarItem key={1} icon={<Icon icon="dashboard"/>} label="Dashboard"/>,
-            <SideBarItem key={2} icon={<Icon icon="content"/>} label="Content" active/>,
-            <SideBarItem key={3} icon={<Icon icon="team"/>} label="team"/>,
-            <SideBarItem key={4} icon={<Icon icon="computer"/>} label="App/Web"/>,
-            <SideBarItem key={5} icon={<Icon icon="analytics"/>} label="Analytics" badge={<Badge label="3"/>}/>,
-            <SideBarItem key={6} icon={<Icon icon="media"/>} label="Media" badge={<Badge label="16"/>}/>,
-            <SideBarItem key={7} icon={<Icon icon="notification"/>} label="Notification"/>,
-            <SideBarItem key={8} icon={<Icon icon="settings"/>} label="Settings"/>,
-          ]}
-          footerItems={[
-            <SideBarItem key={1} icon={<Icon icon="headphone"/>} label="Contact Support"/>,
-          ]}
+          navItems={<>
+            <SideBarItem icon={<Icon icon="dashboard"/>} label="Dashboard"/>
+            <SideBarItem icon={<Icon icon="content"/>} label="Content" active/>
+            <SideBarItem icon={<Icon icon="team"/>} label="Team"/>
+            <SideBarItem icon={<Icon icon="computer"/>} label="App/Web"/>
+            <SideBarItem icon={<Icon icon="analytics"/>} label="Analytics" badge={<Badge label="3"/>}/>
+            <SideBarItem icon={<Icon icon="media"/>} label="Media" badge={<Badge label="16"/>}/>
+            <SideBarItem icon={<Icon icon="notification"/>} label="Notification"/>
+            <SideBarItem icon={<Icon icon="settings"/>} label="Settings"/>
+            </>}
+          footerItems={<>
+            <SideBarItem key={1} icon={<Icon icon="headphone"/>} label="Contact Support"/>
+            </>}
         >
           {children}
         </SideBar>
