@@ -22,7 +22,7 @@ export default function StoryItem({
   views,
 }: StoryItemProps) {
   return (
-    <div className="relative w-[340px] h-[500px] bg-white rounded-3xl">
+    <div className="relative w-[300px] min-w-[300px] sm:w-[340px] sm:min-w-[340px] h-[440px] sm:h-[500px] bg-white rounded-3xl">
       <Image
         className="w-full h-full rounded-[inherit]"
         src={imageSrc}
@@ -74,7 +74,7 @@ export default function StoryItem({
             <div className="text-slate-300 font-semibold">{date}</div>
             <div
               className={cn(
-                'ml-auto px-[20px] py-[10px] font-semibold text-center text-nowrap leading-tight rounded-[5px]',
+                'ml-auto px-[20px] py-[10px] hidden sm:block font-semibold text-center text-nowrap leading-tight rounded-[5px]',
                 status === 'Created' && 'bg-blue-100 text-blue-500',
                 status === 'Published' && 'bg-teal-50 text-teal-600',
                 status === 'Draft' && 'bg-slate-200 text-slate-600',

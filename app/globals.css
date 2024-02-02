@@ -4,7 +4,7 @@
 
 @layer base {
   html, body {
-    @apply w-full h-full flex;
+    @apply w-full h-full flex flex-col;
   }
 
   body {
@@ -21,12 +21,13 @@
   :hover::-webkit-scrollbar-track {
     @apply bg-slate-300/0;
   }
-  ::-webkit-scrollbar-track:hover {
+  /* ::-webkit-scrollbar-track:hover {
     @apply bg-slate-300/35;
-  }
+  } */
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-slate-300/50 transition-colors rounded-lg;
+    /* @apply bg-slate-300/50 transition-colors rounded-lg; */
+    @apply bg-slate-300/0 transition-colors rounded-lg;
   }
   :hover::-webkit-scrollbar-thumb {
     @apply bg-slate-300/75;

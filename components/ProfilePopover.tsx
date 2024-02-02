@@ -4,7 +4,7 @@ export type ProfilePopoverProps = {}
 
 export default function ProfilePopover({}: ProfilePopoverProps) {
   return (
-    <div className="px-2 py-2 min-w-72 flex items-center gap-[10px] bg-slate-100/40 hover:bg-violet-200/50 active:bg-violet-300/50 border border-slate-200 transition rounded-xl select-none">
+    <div className="px-2 py-2 min-w-[84px] md:min-w-48 2xl:min-w-72 flex items-center gap-[10px] bg-slate-100/40 hover:bg-violet-200/50 active:bg-violet-300/50 border border-slate-200 transition rounded-xl select-none">
       <Image
         className="w-8 h-8 rounded-md"
         src="/images/avatars/avatar.png"
@@ -12,12 +12,12 @@ export default function ProfilePopover({}: ProfilePopoverProps) {
         width={128}
         height={128}
       />
-      <div className="">
-        <div className="text-[10px] leading-4 font-medium">Welcome back,</div>
-        <div className="text-[17px] leading-5 font-medium">Akshita Patel</div>
+      <div className="hidden sm:block">
+        <div className="text-[10px] leading-4 font-medium text-nowrap">Welcome back,</div>
+        <div className="text-[17px] leading-5 font-medium text-nowrap">Akshita Patel</div>
       </div>
       <svg
-      className="ml-auto"
+        className="ml-auto"
         width="24"
         height="24"
         viewBox="0 0 24 24"

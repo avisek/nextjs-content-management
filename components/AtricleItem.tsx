@@ -26,7 +26,7 @@ export default function ArticleItem({
   tags,
 }: ArticleItemProps) {
   return (
-    <div className="p-6 min-w-[472px] bg-white rounded-3xl">
+    <div className="p-4 sm:p-6 min-w-[300px] sm:min-w-[472px] bg-white rounded-3xl">
       <Image
         className="mb-5 block object-cover aspect-[435/228] rounded-xl"
         src={imageSrc}
@@ -36,8 +36,8 @@ export default function ArticleItem({
         priority={true}
       />
 
-      <div className="mb-2 flex items-center">
-        <div className="text-violet-500 font-extrabold uppercase">{field}</div>
+      <div className="mb-2 flex flex-wrap items-center">
+        <div className="py-2 text-violet-500 font-extrabold uppercase">{field}</div>
         <svg
           className="mx-2"
           width="5"
@@ -48,8 +48,8 @@ export default function ArticleItem({
         >
           <circle cx="2.5" cy="2.5" r="2.5" fill="#D9D9D9" />
         </svg>
-        <div className="text-slate-400 font-semibold">{date}</div>
-        <div className="ml-auto flex items-center gap-2">
+        <div className="mr-auto text-slate-400 font-semibold">{date}</div>
+        <div className="flex items-center gap-2">
           <Image
             className="w-[30px] h-[30px] rounded-full"
             src="/images/avatars/ben-den-engelsen-ZEjjjYnMYbo-unsplash.jpg"
@@ -65,17 +65,17 @@ export default function ArticleItem({
         <h4 className="mb-2 grow text-slate-900 text-2xl leading-normal font-semibold text-ellipsis whitespace-nowrap overflow-hidden">
           {title}
         </h4>
-        <div className={cn('px-[20px] py-[10px] font-semibold text-center text-nowrap leading-tight rounded-[5px]', status === 'Created' && 'bg-violet-100 text-violet-500', status === 'Published' && 'bg-teal-100/75 text-teal-600')}>
+        <div className={cn('px-[20px] py-[10px] hidden sm:block font-semibold text-center text-nowrap leading-tight rounded-[5px]', status === 'Created' && 'bg-violet-100 text-violet-500', status === 'Published' && 'bg-teal-100/75 text-teal-600')}>
           {status}
         </div>
       </div>
       <p className="mb-3 text-slate-400">{summary}</p>
 
-      <div className="mb-5 flex items-center gap-[11px]">
+      <div className="mb-5 flex flex-wrap items-center gap-[7px] sm:gap-[11px]">
         {tags.map((tag, index) => (
           <div
             key={index}
-            className="px-[20px] py-[10px] text-slate-400 bg-slate-50 font-semibold rounded-[5px]"
+            className="px-[10px] sm:px-[20px] py-[5px] sm:py-[10px] text-slate-400 bg-slate-50 font-semibold rounded-[5px]"
           >
             {tag}
           </div>

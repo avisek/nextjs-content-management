@@ -1,4 +1,5 @@
 import stories from '@/app/data/stories'
+import HorizontalScroll from '@/components/HorizontalScroll'
 import StoryItem from '@/components/StoryItem'
 import Link from 'next/link'
 
@@ -17,11 +18,13 @@ export default function Stories() {
         </Link>
       </div>
 
-      <div className="mb-10 max-w-full flex gap-8 overflow-x-auto">
-        {stories.map((story) => (
-          <StoryItem key={story.id} {...story} />
-        ))}
-      </div>
+      <HorizontalScroll className="mb-10">
+        <div className="flex gap-4 sm:gap-8">
+          {stories.map((story) => (
+            <StoryItem key={story.id} {...story} />
+          ))}
+        </div>
+      </HorizontalScroll>
     </div>
   )
 }

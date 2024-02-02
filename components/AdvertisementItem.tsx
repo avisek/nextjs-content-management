@@ -15,13 +15,13 @@ export default function AdvertisementItem({
   href,
 }: AdvertisementItemProps) {
   return (
-    <div className="max-w-[500px] flex items-stretch bg-white rounded-3xl shadow-[0_0_10px_0_hsl(0deg_0%_0%_/_25%)]">
+    <div className="max-w-[600px] grid grid-cols-[45%,_auto] items-stretch bg-white rounded-3xl shadow-[0_0_10px_0_hsl(0deg_0%_0%_/_25%)]">
       <Image
-        className="block w-auto h-auto object-cover aspect-[226/212] rounded-[inherit] rounded-r-none"
+        className="block w-full h-auto object-cover aspect-[226/212] rounded-[inherit] rounded-r-none"
         src={imageSrc}
         alt={title}
-        width={2 * 226}
-        height={2 * 212}
+        width={226}
+        height={212}
         priority={true}
       />
       

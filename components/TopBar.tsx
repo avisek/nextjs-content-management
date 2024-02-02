@@ -10,19 +10,19 @@ export type TopBarProps = {
 function TopBar({ start, end, children }: TopBarProps) {
   return (
     <div className="w-full h-full grid grid-rows-[auto,_1fr] bg-slate-100">
-      <div className="px-14 py-[18px] flex justify-between items-center gap-8 bg-white rounded-[20px] overflow-x-auto">
-        <div className="flex items-center gap-8">{start}</div>
-        <div className="flex items-center gap-8">{end}</div>
+      <div className="px-3 sm:px-5 md:px-14 py-2 sm:py-[18px] flex justify-between items-center gap-4 xl:gap-8 bg-white rounded-[20px] overflow-x-auto">
+        <div className="flex items-center gap-4 xl:gap-8 grow">{start}</div>
+        <div className="flex items-center gap-4 xl:gap-8">{end}</div>
       </div>
 
-      <div className="px-14 py-14">{children}</div>
+      <div className="px-4 pr-2 py-8 sm:px-14 sm:py-14 overflow-auto">{children}</div>
     </div>
   )
 }
 
 TopBar.Search = function Search() {
   return (
-    <div className="px-4 py-0 min-w-72 flex items-center rounded-3xl bg-slate-50 hover:bg-slate-100 focus-within:hover:bg-slate-50 focus-within:outline focus-within:outline-1 focus-within:outline-violet-700 transition">
+    <div className="px-4 py-0 min-w-28 sm:min-w-72 w-full lg:w-auto flex items-center rounded-3xl bg-slate-50 hover:bg-slate-100 focus-within:hover:bg-slate-50 focus-within:outline focus-within:outline-1 focus-within:outline-violet-700 transition">
       <svg
         width="24"
         height="24"
@@ -41,6 +41,7 @@ TopBar.Search = function Search() {
         className="px-2 py-4 w-full bg-transparent text-sm placeholder:text-zinc-300 outline-none"
         type="text"
         placeholder="Search"
+        name="Search"
       />
     </div>
   )
