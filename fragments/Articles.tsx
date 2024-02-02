@@ -25,7 +25,7 @@ export default function Articles() {
           />
           <ArticleItem
             id="2"
-            imageSrc="/images/article/jason-goodman-Oalh2MojUuk-unsplash.jpg"
+            imageSrc="/images/article/kyle-glenn-nXt5HtLmlgE-unsplash.jpg"
             title="Research on biodiversity an..."
             summary="Lorem ipsum dolor sit amet, consectetur"
             field="Economy"
@@ -36,7 +36,7 @@ export default function Articles() {
           />
           <ArticleItem
             id="3"
-            imageSrc="/images/article/jason-goodman-Oalh2MojUuk-unsplash.jpg"
+            imageSrc="/images/article/marco-oriolesi-wqLGlhjr6Og-unsplash.jpg"
             title="Close and historical ties to h..."
             summary="Lorem ipsum dolor sit amet, consectetur"
             field="Politics"
@@ -58,7 +58,7 @@ export default function Articles() {
           />
           <ArticleItem
             id="5"
-            imageSrc="/images/article/jason-goodman-Oalh2MojUuk-unsplash.jpg"
+            imageSrc="/images/article/kyle-glenn-nXt5HtLmlgE-unsplash.jpg"
             title="Research on biodiversity an..."
             summary="Lorem ipsum dolor sit amet, consectetur"
             field="Economy"
@@ -69,7 +69,7 @@ export default function Articles() {
           />
           <ArticleItem
             id="6"
-            imageSrc="/images/article/jason-goodman-Oalh2MojUuk-unsplash.jpg"
+            imageSrc="/images/article/marco-oriolesi-wqLGlhjr6Og-unsplash.jpg"
             title="Close and historical ties to h..."
             summary="Lorem ipsum dolor sit amet, consectetur"
             field="Politics"
